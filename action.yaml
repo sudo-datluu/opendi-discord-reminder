@@ -1,4 +1,7 @@
 name: 'Reminder action'
+env:
+  CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+  BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
 runs:
   using: 'composite'
   steps:
