@@ -23,6 +23,7 @@ jobs:
 
       - name: Run reminder
         env:
-            CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+            DAILY_REPORT_CHANNEL_ID: ${{ secrets.DAILY_REPORT_CHANNEL_ID }}
+            GENERAL_CHANNEL_ID: ${{ secrets.GENERAL_CHANNEL_ID }}
             BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: python channel_reminder.py
